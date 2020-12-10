@@ -1,0 +1,132 @@
+#layout {
+    display       : flex;
+    min-height    : 100vh;
+    flex-direction: column;
+
+    #header {
+        width           : 100%;
+        padding         : 0 80px;
+        background-color: #292525;
+        display         : flex;
+        justify-content : space-between;
+
+        @media (min-width: 1200px) {
+            padding: 0 100px;
+        }
+
+        // @media (min-width: 1400px) {
+        //     padding: 0 200px;
+        // }
+
+        @media (min-width: 1600px) {
+            padding: 0 200px;
+        }
+
+
+        .logo {
+            text-align     : center;
+            color          : fade(@white, 70%);
+            font-size      : 22px;
+            text-decoration: none;
+
+            &:hover {
+                color: fade(@white, 90%);
+            }
+
+            .iconfont {
+                font-size    : 24px;
+                padding-right: 10px;
+            }
+        }
+
+        .options {
+            display    : flex;
+            align-items: center;
+
+            .menu {
+                background    : transparent;
+                width         : 400px;
+                padding-right : 20px;
+                display       : flex;
+                flex-direction: row-reverse;
+
+                .menu-item {
+                    line-height: 64px;
+                    height     : 64px;
+                }
+
+                .iconfont {
+                    font-size    : 14px;
+                    padding-right: 5px;
+                }
+            }
+
+
+
+            .log-options {
+                cursor: pointer;
+
+                .login-name,
+                .logout-name {
+                    font-size: 14px;
+                    color    : fade(@white, 70%);
+
+                    &:hover {
+                        color: fade(@white, 90%)
+                    }
+                }
+            }
+        }
+    }
+
+    #body {
+        position  : relative;
+        // min-height: 600px;
+        display       : flex;
+        // min-height    : 100vh;
+        flex-direction: column;
+
+        @media (min-width: 1200px) {
+            margin: 0 100px;
+        }
+
+        @media (min-width: 1400px) {
+            
+            margin: 0 200px;
+        }
+
+        @media (min-width: 1600px) {
+            margin: 0 400px;
+        }
+    }
+
+    #footer {
+        color           : fade(@white, 70%);
+        font-size       : 12px;
+        text-align      : center;
+        background-color: #292525;
+
+        p {
+            line-height  : 2;
+            margin-bottom: 0;
+        }
+
+        .copyright,
+        .support,
+        .time,
+        .icp {
+            a {
+                color: fade(@white, 70%);
+
+                &:hover {
+                    color          : fade(@white, 90%);
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .icp {
+            margin-bottom: 0;
+        }
+    }
+}

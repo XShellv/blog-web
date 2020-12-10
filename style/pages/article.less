@@ -1,0 +1,93 @@
+#article-wrapper {
+    margin: 0 auto;
+
+    .article-header {
+        position                : relative;
+        min-height              : 250px;
+        max-height              : 400px;
+        background-position     : center;
+        background-size         : 100% auto;
+        background-repeat       : no-repeat;
+        padding                 : 30px calc(50% - 450px);
+        color                   : #fff;
+        text-align              : center;
+        display                 : flex;
+        align-items             : center;
+        justify-content         : center;
+    }
+
+    .article-title {
+        font-weight  : bold;
+        font-size    : @h1-font-size;
+        margin-bottom: 0;
+    }
+
+    .article-info {
+        text-align     : center;
+        font-size      : 14px;
+        display        : flex;
+        justify-content: space-between;
+        align-items    : center;
+        padding-bottom : 10px;
+        margin-bottom  : 0;
+
+        .time {
+            color    : @gray-500;
+            font-size: 12PX;
+        }
+
+        .avatar {
+            margin-right: 10px;
+        }
+    }
+
+    .article-content {
+        min-width : 200px;
+        min-height: 300px;
+        margin    : 40px auto;
+
+        ul {
+            list-style-type: disc;
+        }
+    }
+
+    .article-nav {
+        display        : flex;
+        justify-content: space-between;
+        padding        : 10px 0;
+        border-bottom  : 1px solid #eaecef;
+
+        a {
+            font-size      : @font-size-lg;
+            display        : inline-flex;
+            justify-content: center;
+            align-items    : center;
+            text-decoration: none;
+            height         : 34px;
+            border-radius  : @border-radius-bs;
+
+            &:hover {
+                background: fade(@primary-color, 5%);
+            }
+
+            i {
+                padding-top: 2px;
+                font-size  : 24px;
+            }
+        }
+
+        a.right {
+            padding: 4px 0 4px 8px;
+        }
+
+        a.left {
+            padding: 4px 8px 4px 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .markdown-body {
+        padding: 15px;
+    }
+}

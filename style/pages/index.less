@@ -1,0 +1,52 @@
+html,
+body {
+    width           : 100%;
+    height          : 100%;
+    color           : @body-color;
+    background-color: @body-bg  !important;
+}
+
+.time {
+    color          : @gray-500;
+    font-size      : @font-size-xs;
+    // padding-left: 10px;
+}
+
+#home-wrapper {
+    background-color: #fff;
+    flex-grow       : 1;
+
+    .ant-list {
+        background-color: #fff;
+    }
+
+    .list-item {
+        width: 100%;
+
+        .home-card-title {
+            font-size: @font-size-lg;
+        }
+
+        .home-card-extra {
+            display        : flex;
+            justify-content: space-between;
+            padding-bottom : 8px;
+        }
+
+        .home-card-abstract {
+            text-align        : justify;
+            display           : -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            font-size         : @font-size-bs;
+            overflow          : hidden;
+            font-size         : @font-size-bs;
+        }
+    }
+}
+
+.ant-list-pagination {
+    display       : flex;
+    flex-direction: row-reverse;
+    align-items   : center;
+}
